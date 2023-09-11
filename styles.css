@@ -67,8 +67,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: -50px;
-    margin-left: -50px;
+    margin-right: 10px;
+    margin-left: 10px;
     width: 700px;
     padding: 20px;
     height: 500px;
