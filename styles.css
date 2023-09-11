@@ -34,10 +34,11 @@ html {
      display: flex;
      flex-direction: row;
      align-items: center;
+     margin-top: 50px;
      width: 250px;
      height: 50px;
-     margin-right: 300px;
-     margin-left: 300px;
+     margin-right: 20px;
+     margin-left: 20px;
      border-radius: 50px;
      background: linear-gradient(315deg, #000000, #020002);
      box-shadow:  -18px -18px 36px #ffffff,
@@ -53,13 +54,13 @@ html {
        width: 50px;
        margin-right: 40px;
        border-radius: 50%;
-       background: linear-gradient(180deg, #ffffff, #aea4a4);
-       box-shadow:  -18px -18px 36px #000000,
+       background: linear-gradient(300deg, #ffffff, #aea4a4);
+       box-shadow:  -18px -18px 36px #ffffff,
                 18px 18px 36px #020002;
      }
 .profile{
-  margin-right: -100px;
-  margin-left: -100px;
+  margin-right: -200px;
+  margin-left: -200px;
 }
 .details {
     margin-top: 10px;
