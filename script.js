@@ -1,35 +1,46 @@
-/* Create an array of days in a week*/
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// Create a new Date object
+const currentDate = new Date();
 
-/* Gets the current date */
-var date = new Date();
+// An array of day names
+const daysOfWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
 
+// Get the current day of the week (0 = Sunday, 1 = Monday, etc.)
+const dayIndex = currentDate.getDay();
 
+// Get the day name based on the day index
+const currentDayOfWeek = daysOfWeek[dayIndex];
 
-/* Define function that updates the time */
-function updateTime() {
-    /* gets current date */
-    var date = new Date();
+// Find the first div with the class "details" by its data-testid attribute
+const currentDayDiv = document.querySelector(
+  '[data-testid="currentDayOfTheWeek"]'
+);
 
-    /* gets date no */
-    var day_no = date.getDay();
+// Inject the current day of the week into the div's content
+currentDayDiv.textContent = `${currentDayOfWeek}`;
 
-    /* gets dayname from the array*/
-    var day_name = days[day_no];
+function updateUTCTime() {
+  // Get the current UTC time in milliseconds
+  const currentUTCTime = new Date().getTime();
 
-    /* gets time in UTC milliseconds */
-    var time = date.getTime();
+  // Find the second div with the class "details" by its data-testid attribute
+  const currentUTCTimeDiv = document.querySelector(
+    '[data-testid="currentUTCTime"]'
+  );
 
-    /* gets string representation of UTC */
-    var utcString = date.toUTCString();
-    /* spliting the string into different parts with space */
-    var parts = utcString.split(" ")
+  // Inject the current UTC time into the div's content
+  currentUTCTimeDiv.textContent = currentUTCTime;
 
-    document.getElementById("day").innerHTML = day_name;
-    document.getElementById("time").innerHTML = parts[4];
-    document.getElementById("utc").innerHTML = parts[5];
-  }
+  // Update the time every second (1000 milliseconds)
+  setTimeout(updateUTCTime, 1000);
+}
 
-  updateTime();
-
-  setInterval(updateTime, 1000);
+// Call the function to start updating the time
+updateUTCTime();
