@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  }
+
+  @media screen and (max-width: 480px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .head {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction:column;
+    margin-right: 300px;
+    margin-left: 300px;
+  }
+
+  .display {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: 250px;
+     height: 10px;
+     margin-right: 500px;
+     margin-left: 500px;
+     border-radius: 50px;
+     background: linear-gradient(315deg, #000000, #020002);
+     box-shadow:  -18px -18px 36px #ffffff,
+              18px 18px 36px #bbb0b0;
+
+   }
+
+   .icons {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 50px;
+       width: 50px;
+       margin-right: 40px;
+       border-radius: 50%;
+       background: linear-gradient(180deg, #ffffff, #aea4a4);
+       box-shadow:  -18px -18px 36px #000000,
+                18px 18px 36px #020002;
+     }
+
+.details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 500px;
+    padding: 20px;
+    height: 200px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #ffffff, #aea4a4);
+    box-shadow:  -18px -18px 36px #000000,
+             18px 18px 36px #020002;
+}
+
+
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    box-shadow:  -10px -10px 30px #000000,
+             10px 10px 30px #200002;
+
+}
+
+  .my_pic {
+    height: 600px;
+    width: 800px;
+    border-radius: 200px;
+
+
+  }
+
+  .day {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-top: -10px;
+  }
+
+  #day {
+    margin-left: 5px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding-top: 15px;
+    background-color: rgb(216, 227, 236);
+    border-radius: 15px;
+
+  }
+
+  .t {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+h3 {
+    margin-top: -10px;
+    font-size: 15px;
+    padding: 2px;
+  }
